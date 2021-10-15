@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+}
+main{
+    background-color: #888;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    gap: 30px;
+}
+
+@media screen and (min-width: 1200px){
+    .box1{
+        background-color: honeydew;
+        height: 200px;
+        width: 200px;
+        border-radius: 100px;
+    }
+    
+    .box2{
+        background-color: indianred;
+        height: 70vh;
+        align-self: center;
+        flex: 1;
+    }
+    
+    .book{
+        height: 70vh;
+        align-self: center;
+        flex: 1;
+        display: flex;
+    }
+    
+    .page{
+        flex: 1;
+    }
+    
+    .box3{
+        background-color: salmon;
+    }
+    
+    .box4{
+        background-color: mediumaquamarine;
+        align-self: flex-end;
+        height: 65vh;
+    }   
+}
+
+
+
+
+@media screen and (max-width: 1100px){
+    .box4{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .box1{
+        background-color: sienna;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .box1{
+        display: none;
+    }
+}
+.book{
+    flex-direction: column;
+}
